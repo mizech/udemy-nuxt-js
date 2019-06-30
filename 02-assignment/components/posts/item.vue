@@ -1,7 +1,8 @@
 <template>
     <div>
         <h2>{{ title }}</h2>
-        <p>{{ subTitle }}</p>
+        <p><strong>{{ subTitle }}</strong></p>
+        <p>{{ text }}</p>
     </div>
 </template>
 
@@ -9,8 +10,12 @@
 
 export default {
     name: "item",
-    props: ["title", "subTitle"]
+    props: [ "title", "subTitle", "text" ]
 }
 </script>
 
-<style></style>
+<style>
+    h2, p {
+        margin-bottom: .75rem;
+    }
+</style>

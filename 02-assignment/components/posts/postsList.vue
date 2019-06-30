@@ -1,7 +1,13 @@
 <template>
     <div>
         <h1>Test</h1>
-        <item class="item" v-for="item in items" :key="item.title" :title="item.title" :subTitle="item.subTitle" />
+        <item class="item" 
+                v-for="(item, index) in postItems" 
+                :key="index" 
+                :title="item.title" 
+                :subTitle="item.subTitle"
+                :text="item.text" 
+            />
     </div>
 </template>
 
@@ -12,29 +18,12 @@ export default {
     components: {
         item
     },
-    data: function() {
-        return {
-            items: [
-                {
-                    title: "First item title",
-                    subTitle: "First item sub-title",
-                },
-                {
-                    title: "Second item title",
-                    subTitle: "Second item sub-title",
-                },
-                {
-                    title: "Third item title",
-                    subTitle: "Third item sub-title",
-                }
-            ]
-        }
-    }
+    props: ["postItems"]
 }
 </script>
 
 <style>
-    .item {
+    h1, .item {
         margin-bottom: 2rem;
     }
 </style>
