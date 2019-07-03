@@ -1,6 +1,6 @@
-# Playground
+# playground
 
-> My mathematical Nuxt.js project
+> My super Nuxt.js project
 
 ## Build Setup
 
