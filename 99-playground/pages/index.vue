@@ -9,6 +9,7 @@
 import axios from "axios";
 
 export default {
+  middleware: "log",
   methods: {
     sendData: () => {
       let data = {
