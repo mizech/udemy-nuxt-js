@@ -4,11 +4,11 @@ Assignments from the Udemy course "Nuxt.js - Vue.js on Steroids" by Maximilian S
 
 ## Assignments
 
-* 01. Pages and Routing
+1. Pages and Routing
 
-* 02. Server-Side Data
+2. Server-Side Data
 
-* 03. Fetching Data
+3. Fetching Data
 
 ## Terminal Commands
 
